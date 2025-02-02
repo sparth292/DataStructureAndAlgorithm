@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    int b;
+    char opp;
+    cout << "Enter two numbers" << endl;
+    cin >> a >> b;
+    cout << "Press ' + , - , * , / ' to perform their operations\n";
+    cin >> opp;
+    switch(opp){
+    case '+':
+    cout << a+b <<" is Addition";
+    break;
+    case '-':
+    cout << a-b <<" is Subtraction";
+    break;
+    case '*':
+    cout << a*b <<" is Multiplication";
+    break;
+    case '/':
+    cout << a/b <<" is Division";
+    break;
+    case '%':
+    cout << a%b <<"is Mod";
+    break;
+    default:
+    cout << "Invalid Operator";
+    }
+    return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+int main() {
+   //variables
+   int n;
+   int shift;
+   int temp;
+  // intput
+  cout << "Enter the range\n";
+  
+  cin >> n;
+  
+  int a[n];
+  
+  printf("Enter %d numbers\n",n);
+  
+  for(int i = 0;i < n;i++){
+      cin >> a[i];
+  }
+  
+  cout << "Enter the numbers of shifts";
+  
+  cin >> shift;
+  // main iteration
+   while(shift) {
+       
+       temp = a[0]; 
+       for(int i=0;i<n;i++) {
+           a[i] = a[i+1];
+       }
+       
+       a[n-1] = temp;
+       
+       shift--;
+   }
+   // printing the output
+   for(int i = 0;i < n;i++) {
+       cout << a[i] << endl;
+   }
+   
+ return 0;
+ 
+}

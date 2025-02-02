@@ -1,0 +1,30 @@
+//Given number is 1330 do a meth where this program will count how many notes of 100 50 20 and 1 you will need
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout << "Enter a number:";
+    cin >> num;
+    int count = 0;
+    switch(1){
+     case 1:
+     cout << "It Will take " << num/100 << " Notes of 100\n";    
+         if(num>=100){
+         num = num%100;
+         }
+    case 2:
+     cout << "It Will take " << num/50 << " Notes of 50\n";    
+         if(num>=50){
+         num = num%50;
+         }
+    case 3:
+     cout << "It Will take " << num/20 << " Notes of 20\n";    
+         if(num>=20){
+         num = num%20;
+         }
+     case 4:
+     cout << "It Will take " << num/1<< " Notes of 1\n";    
+
+    }
+    return 0;
+}

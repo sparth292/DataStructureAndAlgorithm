@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n = 156;
+    int finans = 0;
+    while(n>0){
+        finans = (finans*10) + (n%10);
+        n/=10;
+    }
+    cout << finans;
+    return 0;
+}
